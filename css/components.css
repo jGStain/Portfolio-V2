@@ -4,7 +4,7 @@
 
 .site-header {
     position: sticky;
-    top: var(--space-md);
+    top: var(--space-lg);
     z-index: 100;
     padding-block: var(--space-md);
 }
@@ -22,6 +22,8 @@
 
     background: rgba(11, 13, 16, 0.75);
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
     box-shadow: var(--shadow-md);
 }
 
