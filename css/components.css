@@ -1,0 +1,54 @@
+/* ==========================
+   Navigation
+========================== */
+
+.site-header {
+    position: sticky;
+    top: var(--space-md);
+    z-index: 100;
+    padding-block: var(--space-md);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+
+    padding: var(--space-md) var(--space-xl);
+
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-full);
+
+    background: rgba(11, 13, 16, 0.75);
+    backdrop-filter: blur(16px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav_logo {
+    font-size: 1.25rem;
+    font-weight: var(--fw-extra-bold);
+    letter-spacing: -0.04em;
+}
+
+.nav_logo span {
+    color: var(--clr-accent);
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+.nav_links a {
+    color: var(--clr-text-muted);
+    font-size: var(--fs-body-sm);
+    font-weight: var(--fw-medium);
+    transition: color 0.2s ease;
+}
+
+.nav_links a:hover,
+.nav_links a:focus {
+    color: var(--clr-text);
+}

@@ -10,45 +10,6 @@ body {
     margin-inline: auto;
 }
 
-/* Header */
-
-.site-header {
-    position: sticky;
-    top: 1rem;
-    z-index: 100;
-    padding: 1rem 0;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 2rem;
-    border: 1px solid var(--clr-border);
-    border-radius: var(--radius-xl);
-    background: rgba(11, 13, 16, 0.8);
-    backdrop-filter: blur(16px);
-}
-
-.nav_logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.nav_logo span {
-    color: var(--clr-accent);
-}
-
-.nav_links a {
-    color: var(--clr-text-muted);
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
-}
-
-.nav_links a:hover {
-    color: var(--clr-text);
-}
-
 /* Hero */
 
 .hero {
