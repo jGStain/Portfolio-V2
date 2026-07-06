@@ -1,20 +1,108 @@
 :root {
-    --color-bg: #0B0D10;
-    --color-surface: #151922;
-    --color-surface-light: #1B2130;
+    /* ==========================
+       Colours
+    ========================== */
 
-    --color-text: #FFFFFF;
-    --color-muted: #9CA3AF;
+    --clr-bg: #0B0D10;
 
-    --color-accent: #3B82F6;
-    --color-accent-hover: #2563EB;
+    --clr-surface: #151922;
 
-    --color-border: #2A2F3A;
+    --clr-surface-light: #1B2130;
 
-    --font-main: Arial, Helvetica, sans-serif;
+    --clr-border: #2A2F3A;
 
-    --radius-small: 12px;
-    --radius-large: 20px;
+    --clr-text: #FFFFFF;
 
-    --container-width: 1120px;
+    --clr-text-muted: #9CA3AF;
+
+    --clr-accent: #3B82F6;
+
+    --clr-accent-hover: #2563EB;
+
+    --clr-success: #22C55E;
+
+    --clr-warning: #F59E0B;
+
+    --clr-danger: #EF4444;
+
+    /* ==========================
+        Typography
+    ========================== */
+
+    --font-primary: "Inter", sans-serif;
+
+    --fs-display: clamp(4rem, 8vw, 6rem);
+
+    --fs-h1: clamp(3rem, 6vw, 4.5rem);
+
+    --fs-h2: clamp(2rem, 4vw, 3rem);
+
+    --fs-h3: 1.5rem;
+
+    --fs-body-lg: 1.25rem;
+
+    --fs-body: 1rem;
+
+    --fs-body-sm: .9rem;
+
+    --fw-light: 300;
+
+    --fw-regular: 400;
+
+    --fw-medium: 500;
+
+    --fw-semibold: 600;
+
+    --fw-bold: 700;
+
+    --fw-extra-bold: 800;
+
+    /* ==========================
+        Spacing
+    ========================== */
+
+    --space-xs: .5rem;
+
+    --space-sm: .75rem;
+
+    --space-md: 1rem;
+
+    --space-lg: 1.5rem;
+
+    --space-xl: 2rem;
+
+    --space-2xl: 3rem;
+
+    --space-3xl: 4rem;
+
+    --space-4xl: 6rem;
+
+    --space-5xl: 8rem;
+
+    /* ==========================
+        Radius
+    ========================== */
+
+    --radius-sm: .5rem;
+
+    --radius-md: .75rem;
+
+    --radius-lg: 1rem;
+
+    --radius-xl: 1.5rem;
+
+    --radius-full:999px;
+
+    /* ==========================
+        Shadows
+    ========================== */
+
+    --shadow-sm:
+    0 4px 10px rgba(0,0,0,.15);
+
+    --shadow-md:
+    0 10px 30px rgba(0,0,0,.25);
+
+    --shadow-lg:
+    0 20px 50px rgba(0,0,0,.35);
 }
