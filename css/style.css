@@ -13,14 +13,28 @@ body {
 /* Hero */
 
 .hero {
-    min-height: 85vh;
+    min-height: calc(100vh - 120px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-block: var(--space-3xl);
 }
 
 .hero_content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.hero_right {
+    min-height: 360px;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-xl);
+    background: var(--clr-surface);
+}
+
+.hero_left {
+    max-width: 600px;
 }
 
 .eyebrow {
@@ -34,7 +48,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(4rem, 7vw, 5.5rem);
     line-height: 1;
     letter-spacing: -0.06em;
 }
