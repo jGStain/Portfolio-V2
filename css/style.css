@@ -141,3 +141,129 @@ h2 {
     border: 1px solid var(--clr-border);
     color: var(--clr-text);
 }
+
+/* About */
+
+.about {
+    padding-block: var(--space-3xl) var(--space-5xl);
+}
+
+.section_label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    color: var(--clr-accent);
+    font-size: var(--fs-body-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.section_label_dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--clr-accent);
+}
+
+.about_title {
+    margin-bottom: var(--space-lg);
+    font-size: var(--fs-h2);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--clr-text);
+}
+
+.about_text {
+    max-width: 680px;
+}
+
+.about_text p {
+    color: var(--clr-text-muted);
+    font-size: var(--fs-body);
+    line-height: 1.7;
+}
+
+.about_text p + p {
+    margin-top: var(--space-lg);
+}
+
+.about_content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: var(--space-3xl);
+    align-items: start;
+}
+
+.about_intro {
+    max-width: 560px;
+}
+
+.about_cv {
+    gap: var(--space-sm);
+    margin-top: var(--space-xl);
+}
+
+.about_cv svg {
+    width: 18px;
+    height: 18px;
+}
+
+.about_features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    background: var(--clr-surface);
+    overflow: hidden;
+}
+
+.feature_card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--space-md);
+    align-items: start;
+    min-height: 110px;
+    padding: var(--space-md) var(--space-lg);
+}
+
+/* Vertical divider between the columns */
+.feature_card:nth-child(odd) {
+    border-right: 1px solid var(--clr-border);
+}
+
+/* Horizontal divider between the rows */
+.feature_card:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.feature_icon {
+    grid-row: 1 / span 2;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-md);
+    background: rgba(59, 130, 246, 0.14);
+    color: var(--clr-accent);
+}
+
+.feature_icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.feature_title {
+    margin: 0 0 0.35rem;
+    color: var(--clr-text);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.feature_description {
+    margin: 0;
+    color: var(--clr-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
