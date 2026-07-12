@@ -14,13 +14,11 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--space-xl);
-
     padding: var(--space-md) var(--space-xl);
-
     border: 1px solid var(--clr-border);
     border-radius: var(--radius-full);
 
-    background: rgba(11, 13, 16, 0.75);
+    background: var(--clr-nav-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 
@@ -54,3 +52,77 @@
 .nav_links a:focus {
     color: var(--clr-text);
 }
+
+.nav_actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav_icon {
+    color: var(--clr-text-muted);
+    font-size: var(--fs-body-sm);
+    font-weight: var(--fw-medium);
+    transition: color 0.2s ease;
+}
+
+.nav_icon:hover .nav_svg,
+.nav_icon:focus-visible {
+    color: var(--clr-text);
+    transform: translateY(-2px);
+}
+
+.nav_svg {
+    width: 22px;
+    height: 22px;
+    color: var(--clr-text-muted);
+    transition: all .25s ease;
+}
+
+.theme_toggle {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 24px);
+    align-items: center;
+    padding: 3px;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-full);
+    background: var(--clr-surface);
+    color: var(--clr-text-muted);
+    cursor: pointer;
+}
+
+.theme_toggle_icon {
+    position: relative;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    color: var(--clr-text-muted);
+    transition: color .25s ease;
+}
+
+.theme_toggle_icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.theme_toggle_indicator {
+    position: absolute;
+    z-index: 3;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--clr-accent);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.65);
+    transform: translateX(24px);
+    transition: transform 0.25s ease;
+}
+
+[data-theme="light"] .theme_toggle_indicator {
+    transform: translateX(0);
+}
+

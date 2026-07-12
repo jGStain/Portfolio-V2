@@ -25,6 +25,10 @@
 
     --clr-danger: #EF4444;
 
+    --clr-nav-bg: rgba(11, 13, 16, 0.75);
+
+    --clr-nav-border: rgba(255, 255, 255, 0.08);
+
     /* ==========================
         Typography
     ========================== */
@@ -105,4 +109,17 @@
 
     --shadow-lg:
     0 20px 50px rgba(0,0,0,.35);
+}
+
+[data-theme="light"] {
+    --clr-bg: #f8fafc;
+    --clr-surface: #ffffff;
+    --clr-surface-light: #f1f5f9;
+    --clr-border: #d8dee8;
+
+    --clr-text: #111827;
+    --clr-text-muted: #64748b;
+
+    --clr-nav-bg: rgba(255, 255, 255, 0.82);
+    --clr-nav-border: rgba(15, 23, 42, 0.12);
 }
