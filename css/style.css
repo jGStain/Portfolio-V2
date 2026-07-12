@@ -63,10 +63,11 @@ body {
 .hero_image {
     position: relative;
     z-index: 1;
-    width: min(100%, 430px);
+    width: min(100%, 480px);
     height: auto;
     display: block;
     object-fit: contain;
+    transform: translateY(-25px);
 }
 
 .hero_left {
