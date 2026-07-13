@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: min(1120px,calc(100% - 2rem));
+    width: min(1280px, calc(100% - 3rem));
     margin-inline: auto;
 }
 
@@ -327,4 +327,95 @@ h2 {
     font-size: 0.95rem;
     font-weight: var(--fw-semibold);
     white-space: nowrap;
+}
+
+/* Projects */
+
+.projects {
+    padding-block: var(--space-5xl);
+}
+
+.featured_project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+    padding: var(--space-xl);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-xl);
+    background: var(--clr-surface);
+    box-shadow: var(--shadow-md);
+}
+
+.featured_project_image {
+    height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: var(--radius-lg);
+    background: var(--clr-surface-light);
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-accent) transparent;
+}
+
+.featured_project_image::-webkit-scrollbar {
+    width: 8px;
+}
+
+.featured_project_image::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.featured_project_image::-webkit-scrollbar-thumb {
+    background: var(--clr-accent);
+    border-radius: var(--radius-full);
+}
+
+.featured_project_content {
+    max-width: 100%;
+}
+
+.featured_project_title {
+    color: var(--clr-text);
+    margin-bottom: var(--space-lg);
+}
+
+.featured_project_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-block: var(--space-lg);
+}
+
+.featured_project_tags span {
+    padding: .45rem .9rem;
+    border: 1px solid var(--clr-border);
+    border-radius: 999px;
+    background: rgba(50, 130, 246, .08);
+    color: var(--clr-primary);
+    font-size: .85rem;
+    font-weight: var(--fw-medium);
+}
+
+.featured_project_links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.featured_project_links .btn {
+    gap: var(--space-sm);
+}
+
+.featured_project_links svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.featured_project_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
 }
