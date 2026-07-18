@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-primary);
     background: var(--clr-bg);
@@ -145,7 +149,7 @@ h2 {
 /* About */
 
 .about {
-    padding-block: var(--space-3xl) var(--space-5xl);
+    padding-block: var(--space-4xl);
 }
 
 .section_label {
@@ -226,6 +230,7 @@ h2 {
     align-items: start;
     min-height: 110px;
     padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--clr-border);
 }
 
 /* Vertical divider between the columns */
@@ -236,6 +241,10 @@ h2 {
 /* Horizontal divider between the rows */
 .feature_card:nth-child(-n + 2) {
     border-bottom: 1px solid var(--clr-border);
+}
+
+.feature_card:last-child {
+    border-bottom: 0;
 }
 
 .feature_icon {
@@ -271,7 +280,7 @@ h2 {
 /* Skills */
 
 .skills {
-    padding-block: var(--space-5xl);
+    padding-block: var(--space-4xl);
 }
 
 .skills_title {
@@ -332,7 +341,7 @@ h2 {
 /* Projects */
 
 .projects {
-    padding-block: var(--space-5xl);
+    padding-block: var(--space-4xl);
 }
 
 .featured_project {
@@ -563,7 +572,7 @@ h2 {
 /* Contact */
 
 .contact {
-    padding-block: var(--space-5xl);
+    padding-block: var(--space-4xl);
 }
 
 .contact_title {
@@ -578,4 +587,141 @@ h2 {
     max-width: 650px;
     color: var(--clr-text-muted);
     line-height: 1.7;
+}
+
+.contact_links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 360px));
+    justify-content: space-between;
+    gap: var(--space-lg);
+    margin-top: var(--space-2xl);
+}
+
+.contact_card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact_card:hover {
+    transform: translateY(-4px);
+    border-color: var(--clr-accent);
+    box-shadow: var(--shadow-md);
+}
+
+.contact_card_icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: rgba(59, 130, 246, 0.12);
+    border-radius: var(--radius-md);
+    color: var(--clr-accent);
+}
+
+.contact_card_icon svg,
+.contact_card_icon i {
+    width: 22px;
+    height: 22px;
+    font-size: 1.4rem;
+}
+
+.contact_card_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 0;
+}
+
+.contact_card_label {
+    color: var(--clr-text);
+    font-weight: var(--fw-semibold);
+}
+
+.contact_card_value {
+    overflow: hidden;
+    color: var(--clr-text-muted);
+    font-size: var(--fs-body-sm);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contact_card_value_primary {
+    color: var(--clr-text);
+    font-weight: var(--fw-medium);
+}
+
+.contact_card_arrow {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    flex-shrink: 0;
+    color: var(--clr-text-muted);
+    transition: transform .3s ease;
+}
+
+.contact_card:hover .contact_card_arrow {
+    transform: translate(3px, -3px);
+}
+
+/* Footer */
+
+.site_footer {
+    padding-block: var(--space-xl);
+    border-top: 1px solid var(--clr-border);
+    background: var(--clr-bg);
+}
+
+.site_footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+}
+
+.site_footer_text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.site_footer_name {
+    color: var(--clr-text);
+    font-weight: var(--fw-semibold);
+}
+
+.site_footer_copyright {
+    color: var(--clr-text-muted);
+    font-size: var(--fs-body-sm);
+}
+
+.site_footer_back_to_top {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--clr-text-muted);
+    font-weight: var(--fw-semibold);
+    transition: color 0.3s ease;
+}
+
+.site_footer_back_to_top:hover {
+    color: var(--clr-accent);
+}
+
+.site_footer_back_to_top svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.site_footer_back_to_top:hover svg {
+    transform: translateY(-3px);
 }

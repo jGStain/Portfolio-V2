@@ -19,68 +19,80 @@
         <nav class="nav container">
             <a href="#" class="nav_logo">Jason<span>.</span></a>
 
-            <ul class="nav_links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <button
+                class="nav_toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav_menu"
+            >
+                <i data-lucide="menu"></i>
+            </button>
 
-            <div class="nav_actions">
-                <a
-                    href="https://github.com/jGStain"
-                    class="nav_icon"
-                    aria-label="Visit Jason's Github profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="nav_svg"
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav_actions">
+                    <a
+                        href="https://github.com/jGStain"
+                        class="nav_icon"
+                        aria-label="Visit Jason's Github profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <path d="M12 .5C5.648.5.5 5.648.5 12a11.5 11.5 0 0 0 7.863 10.92c.575.106.785-.25.785-.556 0-.275-.01-1.003-.016-1.97-3.2.695-3.876-1.543-3.876-1.543-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.079-.699.079-.699 1.154.081 1.761 1.185 1.761 1.185 1.026 1.758 2.69 1.25 3.344.956.104-.744.402-1.25.732-1.537-2.554-.291-5.238-1.277-5.238-5.684 0-1.255.449-2.282 1.184-3.087-.118-.291-.513-1.463.112-3.05 0 0 .965-.309 3.162 1.18a10.96 10.96 0 0 1 5.758 0c2.197-1.489 3.16-1.18 3.16-1.18.627 1.587.232 2.759.114 3.05.737.805 1.182 1.832 1.182 3.087 0 4.418-2.689 5.389-5.25 5.675.414.356.783 1.058.783 2.133 0 1.54-.014 2.781-.014 3.16 0 .309.207.668.79.555A11.502 11.502 0 0 0 23.5 12C23.5 5.648 18.352.5 12 .5Z"/>
-                    </svg>
-                </a>
-                <a
-                    href="https://www.linkedin.com/feed/"
-                    class="nav_icon"
-                    aria-label="Visit Jason's Linkedin profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="nav_svg"
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="nav_svg"
+                        >
+                            <path d="M12 .5C5.648.5.5 5.648.5 12a11.5 11.5 0 0 0 7.863 10.92c.575.106.785-.25.785-.556 0-.275-.01-1.003-.016-1.97-3.2.695-3.876-1.543-3.876-1.543-.523-1.328-1.277-1.682-1.277-1.682-1.044-.714.079-.699.079-.699 1.154.081 1.761 1.185 1.761 1.185 1.026 1.758 2.69 1.25 3.344.956.104-.744.402-1.25.732-1.537-2.554-.291-5.238-1.277-5.238-5.684 0-1.255.449-2.282 1.184-3.087-.118-.291-.513-1.463.112-3.05 0 0 .965-.309 3.162 1.18a10.96 10.96 0 0 1 5.758 0c2.197-1.489 3.16-1.18 3.16-1.18.627 1.587.232 2.759.114 3.05.737.805 1.182 1.832 1.182 3.087 0 4.418-2.689 5.389-5.25 5.675.414.356.783 1.058.783 2.133 0 1.54-.014 2.781-.014 3.16 0 .309.207.668.79.555A11.502 11.502 0 0 0 23.5 12C23.5 5.648 18.352.5 12 .5Z"/>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/feed/"
+                        class="nav_icon"
+                        aria-label="Visit Jason's Linkedin profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5ZM.5 8h4V24h-4Zm7 0h3.84v2.2h.05c.53-1.01 1.84-2.08 3.79-2.08 4.06 0 4.81 2.67 4.81 6.14V24h-4v-7.33c0-1.75-.03-4-2.44-4-2.45 0-2.82 1.91-2.82 3.88V24h-4Z"/>
-                    </svg>
-                </a>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="nav_svg"
+                        >
+                            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5ZM.5 8h4V24h-4Zm7 0h3.84v2.2h.05c.53-1.01 1.84-2.08 3.79-2.08 4.06 0 4.81 2.67 4.81 6.14V24h-4v-7.33c0-1.75-.03-4-2.44-4-2.45 0-2.82 1.91-2.82 3.88V24h-4Z"/>
+                        </svg>
+                    </a>
 
-                <button
-                    class="theme_toggle"
-                    type="button"
-                    aria-label="Switch light mode"
-                >
-                    <span class="theme_toggle_indicator"></span>
+                    <button
+                        class="theme_toggle"
+                        type="button"
+                        aria-label="Switch light mode"
+                    >
+                        <span class="theme_toggle_indicator"></span>
 
-                    <span class="theme_toggle_icon theme_toggle_icon--moon">
-                        <i data-lucide="moon"></i>
-                    </span>
+                        <span class="theme_toggle_icon theme_toggle_icon--moon">
+                            <i data-lucide="moon"></i>
+                        </span>
 
-                    <span class="theme_toggle_icon theme_toggle_icon--sun">
-                        <i data-lucide="sun"></i>
-                    </span>
-                </button>
+                        <span class="theme_toggle_icon theme_toggle_icon--sun">
+                            <i data-lucide="sun"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container hero_content">
                 <div class="hero_left">
                     <p class="eyebrow">👋 Hi, I'm</p>
@@ -277,7 +289,7 @@
 
                             <div class="featured_project_links">
                                 <a
-                                    href="#"
+                                    href="https://myfirstsoloweatherapp.netlify.app/"
                                     class="btn btn--primary"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -287,7 +299,7 @@
                                 </a>
 
                                 <a
-                                    href="#"
+                                    href="https://github.com/jGStain/Weather-App"
                                     class="btn btn--secondary"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -333,12 +345,12 @@
                                     </div>
 
                                     <div class="project_card_links">
-                                        <a href="#" class="project_card_link project_card_link--primary">
+                                        <a href="https://rockpaperscissors202.netlify.app/" class="project_card_link project_card_link--primary">
                                             Live Demo
                                             <i data-lucide="external-link"></i>
                                         </a>
 
-                                        <a href="#" class="project_card_link">
+                                        <a href="https://github.com/jGStain/Rock-Paper-Scissors-game" class="project_card_link">
                                             GitHub
                                             <i class="devicon-github-original"></i>
                                         </a>
@@ -365,12 +377,12 @@
                                     </div>
 
                                     <div class="project_card_links">
-                                        <a href="#" class="project_card_link project_card_link--primary">
+                                        <a href="https://js-todoapp-1.netlify.app/" class="project_card_link project_card_link--primary">
                                             Live Demo
                                             <i data-lucide="external-link"></i>
                                         </a>
 
-                                        <a href="#" class="project_card_link">
+                                        <a href="https://github.com/jGStain/To-Do-App" class="project_card_link">
                                             GitHub
                                             <i class="devicon-github-original"></i>
                                         </a>
@@ -398,12 +410,12 @@
                                     </div>
 
                                     <div class="project_card_links">
-                                        <a href="#" class="project_card_link project_card_link--primary">
+                                        <a href="https://multi-cat-quiz-app.netlify.app/" class="project_card_link project_card_link--primary">
                                             Live Demo
                                             <i data-lucide="external-link"></i>
                                         </a>
 
-                                        <a href="#" class="project_card_link">
+                                        <a href="https://github.com/jGStain/Quiz-App" class="project_card_link">
                                             GitHub
                                             <i class="devicon-github-original"></i>
                                         </a>
@@ -430,6 +442,47 @@
                         I'm currently looking for my first Junior Front-End Developer opportunity. Whether you have a role available, 
                         a project in mind or just want to say hello, I'd love to hear from you.
                     </p>
+
+                    <div class="contact_links">
+                        <a href="mailto:pt.jasonw86@hotmail.co.uk" class="contact_card">
+                            <div class="contact_card_icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+
+                            <div class="contact_card_content">
+                                <span class="contact_card_label">Email</span>
+                                <span class="contact_card_value contact_card_value_primary">Jason Stainer</span>
+                            </div>
+
+                            <i data-lucide="arrow-up-right" class="contact_card_arrow"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/jason-stainer-35a4532b0" class="contact_card" target="_blank" rel="noopener noreferrer">
+                            <div class="contact_card_icon">
+                                <i class="devicon-linkedin-plain"></i>
+                            </div>
+
+                            <div class="contact_card_content">
+                                <span class="contact_card_label">LinkedIn</span>
+                                <span class="contact_card_value">Jason Stainer</span>
+                            </div>
+
+                            <i data-lucide="arrow-up-right" class="contact_card_arrow"></i>
+                        </a>
+
+                        <a href="https://github.com/jGStain?tab=repositories" class="contact_card" target="_blank" rel="noopener noreferrer">
+                            <div class="contact_card_icon">
+                                <i class="devicon-github-original"></i>
+                            </div>
+
+                            <div class="contact_card_content">
+                                <span class="contact_card_label">GitHub</span>
+                                <span class="contact_card_value">@JGStain</span>
+                            </div>
+
+                            <i data-lucide="arrow-up-right" class="contact_card_arrow"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -440,4 +493,21 @@
     <script src="js/script.js"></script>
 
 </body>
+<footer class="site_footer">
+    <div class="container site_footer_content">
+        <div class="site_footer_text">
+            <p class="site_footer_name">Jason Stainer</p>
+
+            <p class="site_footer_copyright">
+                © 2026 Jason Stainer. Built with HTML, CSS & JavaScript.
+            </p>
+        </div>
+
+        <a href="#hero" class="site_footer_back_to_top">
+            Back to Top
+            <i data-lucide="arrow-up"></i>
+        </a>
+    </div>
+</footer>
+
 </html>
