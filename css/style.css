@@ -36,17 +36,11 @@ body {
 .hero_right {
     position: relative;
     min-height: 420px;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-}
-
-.hero_right {
-    position: relative;
-    min-height: 420px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    overflow: visible;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
 }
 
 .hero_glow {
