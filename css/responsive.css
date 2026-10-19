@@ -226,11 +226,15 @@
     /* Featured Project */
 
     .featured_project {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+        align-items: start;
     }
 
     .featured_project_image {
-        height: 360px;
+        height: 220px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     /* Other Projects */
