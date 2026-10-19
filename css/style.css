@@ -20,10 +20,9 @@ body {
 /* Hero */
 
 .hero {
-    min-height: calc(100vh - 120px);
     display: flex;
-    align-items: flex-start;
-    padding-block: var(--space-3xl);
+    align-items: center;
+    padding-block: 5rem 3rem;
 }
 
 .hero_content {
@@ -143,7 +142,7 @@ h2 {
 /* About */
 
 .about {
-    padding-block: var(--space-4xl);
+    padding-block: 3rem 5rem;
 }
 
 .section_label {
@@ -188,13 +187,13 @@ h2 {
 
 .about_content {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: var(--space-3xl);
-    align-items: start;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: center;
 }
 
 .about_intro {
-    max-width: 560px;
+    max-width: 650px;
 }
 
 .about_cv {
@@ -222,8 +221,8 @@ h2 {
     grid-template-columns: auto 1fr;
     column-gap: var(--space-md);
     align-items: start;
-    min-height: 110px;
-    padding: var(--space-md) var(--space-lg);
+    min-height: 125px;
+    padding: 1.25rem;
     border-bottom: 1px solid var(--clr-border);
 }
 

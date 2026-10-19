@@ -17,6 +17,19 @@
         gap: var(--space-2xl);
     }
 
+    .about_intro,
+    .about_features {
+        width: 100%;
+        max-width: 720px;
+        margin-inline: auto;
+    }
+
+    .about .section_label {
+        width: 100%;
+        max-width: 720px;
+        margin-inline: auto;
+    }
+
     .about_visual {
         width: 100%;
     }
